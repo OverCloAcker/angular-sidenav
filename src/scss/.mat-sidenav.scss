@@ -77,7 +77,10 @@ p {
   } 
   // .mdc-list-item__primary-text {
 
-  // }
+  .mat-mdc-raised-button:not(:disabled) {
+    background-color: colors.primary();
+    color: colors.on-primary();
+  }
 }
 
 .mat-mdc-list-item-interactive:not(:focus):not(.mdc-list-item--disabled):hover::before {

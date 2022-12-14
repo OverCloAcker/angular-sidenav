@@ -39,10 +39,10 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <p>
-      <button mat-raised-button color="primary" (click)="toggleSideNav()">{{ sidenavButtonText }}</button>
+      <button mat-raised-button (click)="toggleSideNav()">{{ sidenavButtonText }}</button>
     </p>
     <p>
-      <button mat-raised-button color="primary" (click)="toggleSideNavSize()" mat-raised-button>{{ sidenavSizeButtonText }}</button>
+      <button mat-raised-button (click)="toggleSideNavSize()" mat-raised-button>{{ sidenavSizeButtonText }}</button>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
