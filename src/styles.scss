@@ -30,7 +30,6 @@ $angular-sidenav-theme: mat.define-light-theme((
     primary: $angular-sidenav-primary,
     accent: $angular-sidenav-accent,
     warn: $angular-sidenav-warn,
-    zzz: red
   )
 ));
 
@@ -63,5 +62,4 @@ body {
   color: colors.on-background();
 }
 
-@import 'scss/.mat-sidenav';
-@import 'scss/.mat-form-field';
+@import 'scss/.mat-sidenav'

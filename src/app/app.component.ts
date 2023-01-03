@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon'
-import { Router } from '@angular/router';
-import { AuthService } from './auth/auth.service';
-// import { LogoutComponent } from './pages/logout/logout.component';
 
 @Component({
   selector: 'app-root',
@@ -19,12 +16,9 @@ export class AppComponent implements OnInit {
   public sidenavSizeButtonText: string = 'Hide Text';
 
   constructor(
-    private matIconRegistry: MatIconRegistry,
-    public authService: AuthService,
-    public router: Router
+    private matIconRegistry: MatIconRegistry
   ) {
   }
-
 
   ngOnInit(): void {
     this.matIconRegistry.setDefaultFontSetClass('material-symbols-sharp');
@@ -53,14 +47,4 @@ export class AppComponent implements OnInit {
         break;
     }
   }
-
-  // public login(): void {
-  //   this.authService.isAuthorized = true;
-  //   this.router.navigate(['/home']);
-  // }
-
-  // public logout(): void {
-  //   this.authService.isAuthorized = false;
-  //   this.router.navigate(['/login']);
-  // }
 }

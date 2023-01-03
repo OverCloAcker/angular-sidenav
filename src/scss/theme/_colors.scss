@@ -263,10 +263,6 @@
   @return color(on-surface);
 }
 
-@function on-surface-disabled() {
-  @return color(on-surface-disabled);
-}
-
 @function surface-variant() {
   @return color(surface-variant);
 }
