@@ -11,9 +11,13 @@ import { MatListModule } from '@angular/material/list'
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './pages/home/home.component';
 import { InfoComponent } from './pages/info/info.component';
-import { SearchComponent } from './search/search.component';
-import { LogoutComponent } from './logout/logout.component';
-import { LanguageComponent } from './language/language.component';
+import { SearchComponent } from './pages/search/search.component';
+import { LogoutComponent } from './pages/logout/logout.component';
+import { LanguageComponent } from './pages/language/language.component';
+import { LoginComponent } from './pages/login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { MatInputModule } from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -22,16 +26,21 @@ import { LanguageComponent } from './language/language.component';
     InfoComponent,
     SearchComponent,
     LogoutComponent,
-    LanguageComponent
+    LanguageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
